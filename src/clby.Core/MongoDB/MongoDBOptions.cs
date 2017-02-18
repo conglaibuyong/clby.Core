@@ -12,7 +12,7 @@ namespace clby.Core.MongoDB
         {
             set
             {
-                MongoClientSettings.FromUrl(MongoUrl.Create(value));
+                Settings = MongoClientSettings.FromUrl(MongoUrl.Create(value));
             }
         }
 
