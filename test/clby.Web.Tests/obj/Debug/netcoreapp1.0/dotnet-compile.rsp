@@ -1,5 +1,5 @@
---temp-output:C:\Users\FengW\Desktop\clby.Core\test\clby.Web.Tests\obj\Debug\netcoreapp1.0\
---out:C:\Users\FengW\Desktop\clby.Core\test\clby.Web.Tests\bin\Debug\netcoreapp1.0\clby.Web.Tests.dll
+--temp-output:D:\github\clby.Core\test\clby.Web.Tests\obj\Debug\netcoreapp1.0\
+--out:D:\github\clby.Core\test\clby.Web.Tests\bin\Debug\netcoreapp1.0\clby.Web.Tests.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -206,8 +206,8 @@
 --reference:C:\Users\FengW\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\FengW\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\FengW\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
---reference:C:\Users\FengW\Desktop\clby.Core\src\clby.Core\bin\Debug\netstandard1.6\clby.Core.dll
---resource:"C:\Users\FengW\Desktop\clby.Core\test\clby.Web.Tests\obj\Debug\netcoreapp1.0\clby.Web.Testsdotnet-compile.deps.json",clby.Web.Tests.deps.json
-C:\Users\FengW\Desktop\clby.Core\test\clby.Web.Tests\Program.cs
-C:\Users\FengW\Desktop\clby.Core\test\clby.Web.Tests\Startup.cs
-C:\Users\FengW\Desktop\clby.Core\test\clby.Web.Tests\Controllers\HomeController.cs
+--reference:D:\github\clby.Core\src\clby.Core\bin\Debug\netstandard1.6\clby.Core.dll
+--resource:"D:\github\clby.Core\test\clby.Web.Tests\obj\Debug\netcoreapp1.0\clby.Web.Testsdotnet-compile.deps.json",clby.Web.Tests.deps.json
+D:\github\clby.Core\test\clby.Web.Tests\Program.cs
+D:\github\clby.Core\test\clby.Web.Tests\Startup.cs
+D:\github\clby.Core\test\clby.Web.Tests\Controllers\HomeController.cs

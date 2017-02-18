@@ -13,13 +13,13 @@ namespace clby.Tests
         [Fact]
         public void t_DateTimeOffSet()
         {
-            var Client = new MongoClient("mongodb://127.0.0.1:27017/");
-            var MongoDatabase = Client.GetDatabase("tests");
+            //var Client = new MongoClient("mongodb://127.0.0.1:27017/");
+            //var MongoDatabase = Client.GetDatabase("tests");
 
-            MongoDatabase.GetCollection<TC>("TC").InsertOne(new TC()
-            {
-                dt = new DateTimeOffset(DateTime.Now)
-            });
+            //MongoDatabase.GetCollection<TC>("TC").InsertOne(new TC()
+            //{
+            //    dt = new DateTimeOffset(DateTime.Now)
+            //});
 
 
         }

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using clby.Core.MongoDB;
 
 namespace clby.Web.Tests
 {
@@ -30,10 +31,14 @@ namespace clby.Web.Tests
             // Add framework services.
             //services();
 
+            services.AddMongoDBService(o =>
+            {
+                o.ConnectionString = "mongodb://127.0.0.1:27017/";
+                o.DbName = "tests";
+            });
+
             services.AddSession();
-
             services.AddResponseCompression();
-
             services.AddMvc();
         }
 

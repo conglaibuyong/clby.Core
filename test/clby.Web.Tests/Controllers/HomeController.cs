@@ -12,8 +12,6 @@ namespace clby.Web.Tests.Controllers
     {
         public IActionResult Index()
         {
-            var v = this.GetValue("k");
-
             return this.Content("Index");
         }
 

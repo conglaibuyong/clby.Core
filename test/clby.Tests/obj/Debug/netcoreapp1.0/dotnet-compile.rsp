@@ -1,5 +1,5 @@
---temp-output:C:\Users\FengW\Desktop\clby.Core\test\clby.Tests\obj\Debug\netcoreapp1.0\
---out:C:\Users\FengW\Desktop\clby.Core\test\clby.Tests\bin\Debug\netcoreapp1.0\clby.Tests.dll
+--temp-output:D:\github\clby.Core\test\clby.Tests\obj\Debug\netcoreapp1.0\
+--out:D:\github\clby.Core\test\clby.Tests\bin\Debug\netcoreapp1.0\clby.Tests.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -182,7 +182,7 @@
 --reference:C:\Users\FengW\.nuget\packages\xunit.extensibility.execution\2.2.0-beta5-build3474\lib\netstandard1.0\xunit.execution.dotnet.dll
 --reference:C:\Users\FengW\.nuget\packages\xunit.runner.reporters\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.reporters.dotnet.dll
 --reference:C:\Users\FengW\.nuget\packages\xunit.runner.utility\2.2.0-beta2-build3300\lib\netstandard1.1\xunit.runner.utility.dotnet.dll
---reference:C:\Users\FengW\Desktop\clby.Core\src\clby.Core\bin\Debug\netstandard1.6\clby.Core.dll
-C:\Users\FengW\Desktop\clby.Core\test\clby.Tests\Test.cs
-C:\Users\FengW\Desktop\clby.Core\test\clby.Tests\Test_Mongo.cs
-C:\Users\FengW\Desktop\clby.Core\test\clby.Tests\Properties\AssemblyInfo.cs
+--reference:D:\github\clby.Core\src\clby.Core\bin\Debug\netstandard1.6\clby.Core.dll
+D:\github\clby.Core\test\clby.Tests\Test.cs
+D:\github\clby.Core\test\clby.Tests\Test_Mongo.cs
+D:\github\clby.Core\test\clby.Tests\Properties\AssemblyInfo.cs
