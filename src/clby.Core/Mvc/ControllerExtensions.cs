@@ -1,5 +1,6 @@
 ﻿using clby.Core.Json;
 using clby.Core.Misc;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
@@ -262,11 +263,24 @@ namespace clby.Core.Mvc
 
             return d;
         }
-        
+
 
 
         #endregion
 
+
+        #region Cookies
+
+        public static void SetCookie(this Controller controller, string key, string value, CookieOptions options = null)
+        {
+            options = options ?? new CookieOptions();
+            options.HttpOnly = false;
+
+            controller.Response.Cookies.Delete(key);
+            controller.Response.Cookies.Append(key, value, options);
+        }
+
+        #endregion
 
     }
 }
