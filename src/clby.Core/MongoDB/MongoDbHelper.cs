@@ -20,6 +20,14 @@ namespace clby.Core.MongoDB
             client = new MongoClient(value.Settings);
             db = client.GetDatabase(value.DbName);
         }
+        public MongoDbHelper(string connectionString,string dbName)
+        {
+            Ensure.IsNotNullOrEmpty(connectionString, "connectionString");
+            Ensure.IsNotNullOrEmpty(dbName, "dbName");
+
+            client = new MongoClient(connectionString);
+            db = client.GetDatabase(dbName);
+        }
 
         public IMongoDatabase GetInstance()
         {
