@@ -1,21 +1,21 @@
-﻿using clby.Core.Models;
-using Microsoft.AspNetCore.Mvc.Filters;
+﻿using Microsoft.AspNetCore.Mvc.Filters;
 using System;
 using clby.Core.Mvc;
 using Microsoft.AspNetCore.Mvc;
-//using log4net;
+using log4net;
 
-namespace clby.Core.Attributes
+namespace clby.Core.Logging
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = false)]
-    public class LoggingFilter : Attribute, IActionFilter
+    public class ActionLoggingFilter : Attribute, IActionFilter
     {
-        //static ILog logger = LogManager.GetLogger("", "Logs");
+        static ILog logger =
+            LogManager.GetLogger(Log4Helper.LoggerRepository.Name, "ActionLogs");
 
         public void OnActionExecuting(ActionExecutingContext context)
         {
             var log = new ActionLog();
-
+            
             log.ControllerName = context.RouteData.Values["controller"] as string;
             log.ActionName = context.RouteData.Values["action"] as string;
 
@@ -30,12 +30,12 @@ namespace clby.Core.Attributes
 
             context.HttpContext.Response.Headers.Add("LogId", log._id.ToString());
 
-            context.HttpContext.Items["___ActionLog___"] = log;
+            context.HttpContext.Items["___ActionLoggingFilter___"] = log;
         }
 
         public void OnActionExecuted(ActionExecutedContext context)
         {
-            var log = context.HttpContext.Items["___ActionLog___"] as ActionLog;
+            var log = context.HttpContext.Items["___ActionLoggingFilter___"] as ActionLog;
             if (log == null) return;
 
             log.ActionEndTime = DateTime.Now;
@@ -53,7 +53,7 @@ namespace clby.Core.Attributes
                 }
             }
 
-            //logger.Info(log);
+            logger.Info(log);
         }
 
     }

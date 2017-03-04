@@ -2,15 +2,15 @@
   "version": "1.0.0-*",
 
   "dependencies": {
+    "log4net": "2.0.7",
     "Microsoft.AspNetCore.Mvc": "1.1.0",
     "Microsoft.AspNetCore.Session": "1.1.0",
     "Microsoft.Extensions.Caching.Abstractions": "1.1.0",
     "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0",
     "Microsoft.Extensions.Options": "1.1.0",
-    "mongocsharpdriver": "2.4.1",
+    "mongocsharpdriver": "2.4.2",
     "NETStandard.Library": "1.6.1",
-    "Newtonsoft.Json": "9.0.1",
-    "NLog": "5.0.0-beta06"
+    "Newtonsoft.Json": "9.0.1"
   },
 
   "frameworks": {

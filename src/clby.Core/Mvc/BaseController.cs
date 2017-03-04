@@ -1,11 +1,10 @@
-﻿using clby.Core.Attributes;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Threading.Tasks;
 
 namespace clby.Core.Mvc
 {
-    public abstract class BaseControllerCore : Controller
+    public abstract class BaseController : Controller
     {
 
         public override void OnActionExecuting(ActionExecutingContext context)

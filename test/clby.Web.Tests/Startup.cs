@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using clby.Core.MongoDB;
+using clby.Core.Logging;
 
 namespace clby.Web.Tests
 {
@@ -39,7 +40,10 @@ namespace clby.Web.Tests
 
             services.AddSession();
             services.AddResponseCompression();
-            services.AddMvc();
+
+            services.AddMvc(options => {
+                options.Filters.Add(typeof(ActionLoggingFilter));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

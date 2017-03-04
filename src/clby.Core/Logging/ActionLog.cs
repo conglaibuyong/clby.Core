@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace clby.Core.Models
+namespace clby.Core.Logging
 {
     internal class ActionLog
     {
@@ -15,7 +15,7 @@ namespace clby.Core.Models
         }
 
         public ObjectId _id { get; set; }
-
+        
         public string ControllerName { get; set; }
         public string ActionName { get; set; }
         public DateTime ActionStartTime { get; set; }
