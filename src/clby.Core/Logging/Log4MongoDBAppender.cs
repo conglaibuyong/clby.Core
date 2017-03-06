@@ -21,6 +21,10 @@ namespace clby.Core.Logging
 
         protected override void Append(LoggingEvent loggingEvent)
         {
+            /*
+             可能存在性能问题
+             */
+
             var cName = loggingEvent.LoggerName + "_" + DateTime.Now.ToLocalTime().ToString("yyyyMM");
             var collection = mdb.GetCollection<BsonDocument>(cName);
             var log = loggingEvent.MessageObject.GetType() == typeof(string)
