@@ -1,0 +1,6 @@
+D:\github\clby.Core\src\clby.Core\bin\Debug\netstandard1.6\clby.Core.deps.json
+D:\github\clby.Core\src\clby.Core\bin\Debug\netstandard1.6\clby.Core.dll
+D:\github\clby.Core\src\clby.Core\bin\Debug\netstandard1.6\clby.Core.pdb
+D:\github\clby.Core\src\clby.Core\obj\Debug\netstandard1.6\clby.Core.AssemblyInfo.cs
+D:\github\clby.Core\src\clby.Core\obj\Debug\netstandard1.6\clby.Core.dll
+D:\github\clby.Core\src\clby.Core\obj\Debug\netstandard1.6\clby.Core.pdb

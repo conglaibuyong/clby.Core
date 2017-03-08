@@ -1,0 +1,11 @@
+D:\github\clby.Core\test\clby.Web.Tests\bin\Debug\netcoreapp1.0\clby.Web.Tests.deps.json
+D:\github\clby.Core\test\clby.Web.Tests\bin\Debug\netcoreapp1.0\clby.Web.Tests.runtimeconfig.json
+D:\github\clby.Core\test\clby.Web.Tests\bin\Debug\netcoreapp1.0\clby.Web.Tests.runtimeconfig.dev.json
+D:\github\clby.Core\test\clby.Web.Tests\bin\Debug\netcoreapp1.0\clby.Web.Tests.dll
+D:\github\clby.Core\test\clby.Web.Tests\bin\Debug\netcoreapp1.0\clby.Web.Tests.pdb
+D:\github\clby.Core\test\clby.Web.Tests\bin\Debug\netcoreapp1.0\clby.Core.dll
+D:\github\clby.Core\test\clby.Web.Tests\bin\Debug\netcoreapp1.0\clby.Core.pdb
+D:\github\clby.Core\test\clby.Web.Tests\obj\Debug\netcoreapp1.0\clby.Web.Tests.csprojResolveAssemblyReference.cache
+D:\github\clby.Core\test\clby.Web.Tests\obj\Debug\netcoreapp1.0\clby.Web.Tests.AssemblyInfo.cs
+D:\github\clby.Core\test\clby.Web.Tests\obj\Debug\netcoreapp1.0\clby.Web.Tests.dll
+D:\github\clby.Core\test\clby.Web.Tests\obj\Debug\netcoreapp1.0\clby.Web.Tests.pdb

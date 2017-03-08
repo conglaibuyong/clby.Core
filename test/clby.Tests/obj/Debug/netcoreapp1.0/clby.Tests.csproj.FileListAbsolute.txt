@@ -1,0 +1,14 @@
+D:\github\clby.Core\test\clby.Tests\bin\Debug\netcoreapp1.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\github\clby.Core\test\clby.Tests\bin\Debug\netcoreapp1.0\clby.Tests.deps.json
+D:\github\clby.Core\test\clby.Tests\bin\Debug\netcoreapp1.0\clby.Tests.runtimeconfig.json
+D:\github\clby.Core\test\clby.Tests\bin\Debug\netcoreapp1.0\clby.Tests.runtimeconfig.dev.json
+D:\github\clby.Core\test\clby.Tests\bin\Debug\netcoreapp1.0\clby.Tests.dll
+D:\github\clby.Core\test\clby.Tests\bin\Debug\netcoreapp1.0\clby.Tests.pdb
+D:\github\clby.Core\test\clby.Tests\bin\Debug\netcoreapp1.0\clby.Core.dll
+D:\github\clby.Core\test\clby.Tests\bin\Debug\netcoreapp1.0\clby.Core.pdb
+D:\github\clby.Core\test\clby.Tests\obj\Debug\netcoreapp1.0\clby.Tests.csprojResolveAssemblyReference.cache
+D:\github\clby.Core\test\clby.Tests\obj\Debug\netcoreapp1.0\clby.Tests.AssemblyInfo.cs
+D:\github\clby.Core\test\clby.Tests\obj\Debug\netcoreapp1.0\clby.Tests.dll
+D:\github\clby.Core\test\clby.Tests\obj\Debug\netcoreapp1.0\clby.Tests.pdb
+D:\github\clby.Core\test\clby.Tests\bin\Debug\netcoreapp1.0\xunit.runner.utility.netstandard15.dll
+D:\github\clby.Core\test\clby.Tests\bin\Debug\netcoreapp1.0\xunit.runner.reporters.netstandard15.dll
