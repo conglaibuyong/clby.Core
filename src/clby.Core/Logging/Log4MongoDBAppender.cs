@@ -9,14 +9,14 @@ namespace clby.Core.Logging
 {
     public class Log4MongoDBAppender : AppenderSkeleton
     {
-        private IMongoDbHelper mdb = null;
+        private IMongoDbOperator mdb = null;
 
         public string ConnectionString { get; set; }
         public string DbName { get; set; }
 
         public override void ActivateOptions()
         {
-            mdb = new MongoDbHelper(ConnectionString, DbName);
+            mdb = new MongoDbOperator(ConnectionString, DbName);
         }
 
         protected override void Append(LoggingEvent loggingEvent)

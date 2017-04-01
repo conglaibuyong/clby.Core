@@ -7,7 +7,7 @@ namespace clby.Core.Models.Extensions
 {
     public static class ReferenceExtensions
     {
-        public static T Fetch<T, TId, K>(this BaseReference<T, TId, K> Value, IMongoDbHelper mdb) where T : class, IBaseObject, new()
+        public static T Fetch<T, TId, K>(this BaseReference<T, TId, K> Value, IMongoDbOperator mdb) where T : class, IBaseObject, new()
         {
             Value.RealValue = mdb
                 .GetCollection<T>(Value.Ref.CollectionName)
@@ -15,7 +15,7 @@ namespace clby.Core.Models.Extensions
                 .FirstOrDefault();
             return Value.RealValue;
         }
-        public static Task<T> FetchAsync<T, TId, K>(this BaseReference<T, TId, K> Value, IMongoDbHelper mdb) where T : class, IBaseObject, new()
+        public static Task<T> FetchAsync<T, TId, K>(this BaseReference<T, TId, K> Value, IMongoDbOperator mdb) where T : class, IBaseObject, new()
         {
             return mdb
                 .GetCollection<T>(Value.Ref.CollectionName)

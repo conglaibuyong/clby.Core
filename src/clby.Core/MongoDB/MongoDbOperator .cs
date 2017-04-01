@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace clby.Core.MongoDB
 {
-    public class MongoDbHelper : IMongoDbHelper
+    public class MongoDbOperator : IMongoDbOperator
     {
         private MongoClient client = null;
         private IMongoDatabase db = null;
 
-        public MongoDbHelper(IOptions<MongoDBOptions> options)
+        public MongoDbOperator(IOptions<MongoDBOptions> options)
         {
             MongoDBOptions value = options.Value;
             Ensure.IsNotNull(value.Settings, "Settings");
@@ -20,7 +20,7 @@ namespace clby.Core.MongoDB
             client = new MongoClient(value.Settings);
             db = client.GetDatabase(value.DbName);
         }
-        public MongoDbHelper(string connectionString,string dbName)
+        public MongoDbOperator(string connectionString,string dbName)
         {
             Ensure.IsNotNullOrEmpty(connectionString, "connectionString");
             Ensure.IsNotNullOrEmpty(dbName, "dbName");

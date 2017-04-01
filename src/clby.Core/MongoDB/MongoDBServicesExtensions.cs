@@ -11,10 +11,10 @@ namespace clby.Core.MongoDB
             Ensure.IsNotNull(services, "services");
             Ensure.IsNotNull(setupAction, "setupAction");
 
-            services.AddSingleton<IMongoDbHelper, MongoDbHelper>();
+            services.AddSingleton<IMongoDbOperator, MongoDbOperator>();
 
             OptionsServiceCollectionExtensions.AddOptions(services);
-            services.Add(ServiceDescriptor.Singleton<IMongoDbHelper, MongoDbHelper>());
+            services.Add(ServiceDescriptor.Singleton<IMongoDbOperator, MongoDbOperator>());
             OptionsServiceCollectionExtensions.Configure<MongoDBOptions>(services, setupAction);
             return services;
         }

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace clby.Core.MongoDB
 {
-    public interface IMongoDbHelper
+    public interface IMongoDbOperator
     {
         IMongoDatabase GetInstance();
         IMongoDatabase GetInstance(string dbName);
