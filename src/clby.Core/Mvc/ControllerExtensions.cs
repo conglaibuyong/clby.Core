@@ -6,10 +6,12 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace clby.Core.Mvc
 {
+    [DebuggerStepThrough]
     public static class ControllerExtensions
     {
         public static string GetValue(this Controller controller, string key)

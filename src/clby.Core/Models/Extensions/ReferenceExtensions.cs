@@ -1,10 +1,12 @@
 ﻿using clby.Core.MongoDB;
 using MongoDB.Driver;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace clby.Core.Models.Extensions
 {
+    [DebuggerStepThrough]
     public static class ReferenceExtensions
     {
         public static T Fetch<T, TId, K>(this BaseReference<T, TId, K> Value, IMongoDbOperator mdb) where T : class, IBaseObject, new()

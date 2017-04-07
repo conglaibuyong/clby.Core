@@ -13,6 +13,8 @@ namespace clby.Core.Models
             _id = ObjectId.GenerateNewId();
         }
     }
+    
+
     public class BaseObject<TId> : IBaseObject
     {
         public TId _id { get; set; }

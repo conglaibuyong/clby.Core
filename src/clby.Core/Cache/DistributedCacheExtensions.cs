@@ -6,11 +6,13 @@
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 using System;
+using System.Diagnostics;
 using System.Reflection;
 using System.Threading.Tasks;
 
 namespace clby.Core.Cache
 {
+    [DebuggerStepThrough]
     public static class DistributedCacheExtensions
     {
         public static T GetObject<T>(this IDistributedCache self, string key)

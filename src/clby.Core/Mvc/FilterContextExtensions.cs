@@ -2,9 +2,11 @@
 using MongoDB.Bson;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
+using System.Diagnostics;
 
 namespace clby.Core.Mvc
 {
+    [DebuggerStepThrough]
     public static class FilterContextExtensions
     {
         public static Dictionary<string, string> GetFormCollections(this FilterContext context)
