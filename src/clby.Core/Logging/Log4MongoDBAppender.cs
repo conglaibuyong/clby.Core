@@ -3,7 +3,6 @@ using log4net.Appender;
 using log4net.Core;
 using MongoDB.Bson;
 using System;
-using System.Linq;
 
 namespace clby.Core.Logging
 {
@@ -22,7 +21,7 @@ namespace clby.Core.Logging
         protected override void Append(LoggingEvent loggingEvent)
         {
             /*
-             可能存在性能问题
+             * 可能存在性能问题
              */
 
             var cName = loggingEvent.LoggerName + "_" + DateTime.Now.ToLocalTime().ToString("yyyyMM");

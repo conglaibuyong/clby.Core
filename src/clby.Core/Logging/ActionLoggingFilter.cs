@@ -3,6 +3,7 @@ using System;
 using clby.Core.Mvc;
 using Microsoft.AspNetCore.Mvc;
 using log4net;
+using Microsoft.Extensions.Options;
 
 namespace clby.Core.Logging
 {
@@ -12,17 +13,30 @@ namespace clby.Core.Logging
         static ILog logger =
             LogManager.GetLogger(Log4Helper.LoggerRepository.Name, "ActionLogs");
 
+        private ActionLoggingOptions Options = null;
+
+        public ActionLoggingFilter(IOptions<ActionLoggingOptions> options)
+        {
+            Options = options?.Value ?? default(ActionLoggingOptions);
+        }
+
         public void OnActionExecuting(ActionExecutingContext context)
         {
             var log = new ActionLog();
-            
+
             log.ControllerName = context.RouteData.Values["controller"] as string;
             log.ActionName = context.RouteData.Values["action"] as string;
 
             log.Cookies = context.GetCookies();
-            log.Session = context.GetSession();
-            log.UserInfo = context.GetUserInfo();
-            log.SessionId = context.HttpContext.Session?.Id;
+
+            if (Options.HasSession)
+            {
+                log.Session = context.GetSession();
+                log.SessionId = context.HttpContext.Session?.Id;
+
+                log.UserInfo = context.GetUserInfo(Options.UserInfoKey);
+            }
+
             log.FormCollections = context.GetFormCollections();
             log.QueryCollections = context.GetQueryCollections();
             log.RequestHeaders = context.GetRequestHeaders();
