@@ -1184,6 +1184,18 @@
           "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Polly/5.0.6": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.0/Polly.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Polly.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -4164,6 +4176,21 @@
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "tools/install.ps1"
+      ]
+    },
+    "Polly/5.0.6": {
+      "sha512": "fv6sptWmg7kNAbAjQUuE2y7JAf3RGND6qGXaLDbdWQhWnneM1iOs56rSPxX/MWa8LQWURBoVxO78IVwCVDR0Lg==",
+      "type": "package",
+      "path": "polly/5.0.6",
+      "files": [
+        "lib/net45/Polly.XML",
+        "lib/net45/Polly.dll",
+        "lib/net45/Polly.pdb",
+        "lib/netstandard1.0/Polly.XML",
+        "lib/netstandard1.0/Polly.dll",
+        "lib/netstandard1.0/Polly.pdb",
+        "polly.5.0.6.nupkg.sha512",
+        "polly.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -8841,6 +8868,7 @@
       "Microsoft.Extensions.Options >= 1.1.1",
       "NETStandard.Library >= 1.6.1",
       "Newtonsoft.Json >= 9.0.1",
+      "Polly >= 5.0.6",
       "log4net >= 2.0.7",
       "mongocsharpdriver >= 2.4.2"
     ]
@@ -8888,6 +8916,10 @@
           "log4net": {
             "target": "Package",
             "version": "2.0.7"
+          },
+          "Polly": {
+            "target": "Package",
+            "version": "5.0.6"
           },
           "Microsoft.Extensions.Options": {
             "target": "Package",
